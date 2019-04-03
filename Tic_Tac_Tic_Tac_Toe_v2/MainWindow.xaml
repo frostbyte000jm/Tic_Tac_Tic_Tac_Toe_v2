@@ -25,9 +25,6 @@
     </Window.Resources>
 
     <Grid x:Name="Container">
-
-        
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
