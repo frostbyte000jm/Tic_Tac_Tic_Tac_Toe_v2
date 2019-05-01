@@ -6,18 +6,18 @@
         xmlns:local="clr-namespace:Tic_Tac_Tic_Tac_Toe_v2"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="MainWindow" Height="800" Width="800">
+        Title="MainWindow" Height="774" Width="775">
 
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="White"/>
-            <Setter Property="BorderThickness" Value="0.5"/>
-            <Setter Property="FontSize" Value="45"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="FontSize" Value="40"/>
             <Setter Property="FontStyle" Value="Oblique"/>
         </Style>
         <Style TargetType="Border">
             <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderThickness" Value="0.5"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="Background" Value="Black"/>
@@ -26,40 +26,139 @@
 
     <Grid x:Name="Container">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
 
-        <Button Click="Button_Click" x:Name="Button000" Grid.Column="0" Grid.Row="0" Content="X"/>
-        <Button Click="Button_Click" x:Name="Button001" Grid.Column="0" Grid.Row="1" Content="O"/>
-        <Button Click="Button_Click" x:Name="Button002" Grid.Column="0" Grid.Row="2" />
+        <!--Board 0-->
+        <Button Click="Button_Click" x:Name="Button000" Grid.Column="1" Grid.Row="1" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button001" Grid.Column="1" Grid.Row="2" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button002" Grid.Column="1" Grid.Row="3" />
+        <Button Click="Button_Click" x:Name="Button010" Grid.Column="2" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button011" Grid.Column="2" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button012" Grid.Column="2" Grid.Row="3" />
+        <Button Click="Button_Click" x:Name="Button020" Grid.Column="3" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button021" Grid.Column="3" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button022" Grid.Column="3" Grid.Row="3" />
 
-        <Border Height="770"    Margin="32,0,0,0"    Width="8"    Grid.RowSpan="11"      Grid.Column="3" />
-        <Border Height="770"    Margin="32,0,0,0"    Width="8"    Grid.RowSpan="11"      Grid.Column="7" />
-        <Border Height="8"      Margin="4,30,0,0"    Width="792"  Grid.ColumnSpan="11"   Grid.Row="3"    RenderTransformOrigin="0.5,0.5"  />
-        <Border Height="8"      Margin="4,30,0,0"    Width="792"  Grid.ColumnSpan="11"   Grid.Row="7"    RenderTransformOrigin="0.5,0.5"  />
-        
+        <!--Board 1-->
+        <Button Click="Button_Click" x:Name="Button100" Grid.Column="5" Grid.Row="1" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button101" Grid.Column="5" Grid.Row="2" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button102" Grid.Column="5" Grid.Row="3" />
+        <Button Click="Button_Click" x:Name="Button110" Grid.Column="6" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button111" Grid.Column="6" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button112" Grid.Column="6" Grid.Row="3" />
+        <Button Click="Button_Click" x:Name="Button120" Grid.Column="7" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button121" Grid.Column="7" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button122" Grid.Column="7" Grid.Row="3" />
+
+        <!--Board 2-->
+        <Button Click="Button_Click" x:Name="Button200" Grid.Column="9" Grid.Row="1" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button201" Grid.Column="9" Grid.Row="2" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button202" Grid.Column="9" Grid.Row="3" />
+        <Button Click="Button_Click" x:Name="Button210" Grid.Column="10" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button211" Grid.Column="10" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button212" Grid.Column="10" Grid.Row="3" />
+        <Button Click="Button_Click" x:Name="Button220" Grid.Column="11" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button221" Grid.Column="11" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button222" Grid.Column="11" Grid.Row="3" />
+
+        <!--Board 3-->
+        <Button Click="Button_Click" x:Name="Button300" Grid.Column="1" Grid.Row="5" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button301" Grid.Column="1" Grid.Row="6" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button302" Grid.Column="1" Grid.Row="7" />
+        <Button Click="Button_Click" x:Name="Button310" Grid.Column="2" Grid.Row="5" />
+        <Button Click="Button_Click" x:Name="Button311" Grid.Column="2" Grid.Row="6" />
+        <Button Click="Button_Click" x:Name="Button312" Grid.Column="2" Grid.Row="7" />
+        <Button Click="Button_Click" x:Name="Button320" Grid.Column="3" Grid.Row="5" />
+        <Button Click="Button_Click" x:Name="Button321" Grid.Column="3" Grid.Row="6" />
+        <Button Click="Button_Click" x:Name="Button322" Grid.Column="3" Grid.Row="7" />
+
+        <!--Board 4-->
+        <Button Click="Button_Click" x:Name="Button400" Grid.Column="5" Grid.Row="5" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button401" Grid.Column="5" Grid.Row="6" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button402" Grid.Column="5" Grid.Row="7" />
+        <Button Click="Button_Click" x:Name="Button410" Grid.Column="6" Grid.Row="5" />
+        <Button Click="Button_Click" x:Name="Button411" Grid.Column="6" Grid.Row="6" />
+        <Button Click="Button_Click" x:Name="Button412" Grid.Column="6" Grid.Row="7" />
+        <Button Click="Button_Click" x:Name="Button420" Grid.Column="7" Grid.Row="5" />
+        <Button Click="Button_Click" x:Name="Button421" Grid.Column="7" Grid.Row="6" />
+        <Button Click="Button_Click" x:Name="Button422" Grid.Column="7" Grid.Row="7" />
+
+        <!--Board 5-->
+        <Button Click="Button_Click" x:Name="Button500" Grid.Column="9"  Grid.Row="5" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button501" Grid.Column="9"  Grid.Row="6" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button502" Grid.Column="9"  Grid.Row="7" />
+        <Button Click="Button_Click" x:Name="Button510" Grid.Column="10" Grid.Row="5" />
+        <Button Click="Button_Click" x:Name="Button511" Grid.Column="10" Grid.Row="6" />
+        <Button Click="Button_Click" x:Name="Button512" Grid.Column="10" Grid.Row="7" />
+        <Button Click="Button_Click" x:Name="Button520" Grid.Column="11" Grid.Row="5" />
+        <Button Click="Button_Click" x:Name="Button521" Grid.Column="11" Grid.Row="6" />
+        <Button Click="Button_Click" x:Name="Button522" Grid.Column="11" Grid.Row="7" />
+
+        <!--Board 6-->
+        <Button Click="Button_Click" x:Name="Button600" Grid.Column="1" Grid.Row="9" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button601" Grid.Column="1" Grid.Row="10" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button602" Grid.Column="1" Grid.Row="11" />
+        <Button Click="Button_Click" x:Name="Button610" Grid.Column="2" Grid.Row="9" />
+        <Button Click="Button_Click" x:Name="Button611" Grid.Column="2" Grid.Row="10" />
+        <Button Click="Button_Click" x:Name="Button612" Grid.Column="2" Grid.Row="11" />
+        <Button Click="Button_Click" x:Name="Button620" Grid.Column="3" Grid.Row="9" />
+        <Button Click="Button_Click" x:Name="Button621" Grid.Column="3" Grid.Row="10" />
+        <Button Click="Button_Click" x:Name="Button622" Grid.Column="3" Grid.Row="11" />
+
+        <!--Board 7-->
+        <Button Click="Button_Click" x:Name="Button700" Grid.Column="5"  Grid.Row="9" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button701" Grid.Column="5"  Grid.Row="10" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button702" Grid.Column="5"  Grid.Row="11" />
+        <Button Click="Button_Click" x:Name="Button710" Grid.Column="6"  Grid.Row="9" />
+        <Button Click="Button_Click" x:Name="Button711" Grid.Column="6"  Grid.Row="10" />
+        <Button Click="Button_Click" x:Name="Button712" Grid.Column="6"  Grid.Row="11" />
+        <Button Click="Button_Click" x:Name="Button720" Grid.Column="7"  Grid.Row="9" />
+        <Button Click="Button_Click" x:Name="Button721" Grid.Column="7"  Grid.Row="10" />
+        <Button Click="Button_Click" x:Name="Button722" Grid.Column="7"  Grid.Row="11" />
+
+        <!--Board 8-->
+        <Button Click="Button_Click" x:Name="Button800" Grid.Column="9"  Grid.Row="9" Content="X"/>
+        <Button Click="Button_Click" x:Name="Button801" Grid.Column="9"  Grid.Row="10" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button802" Grid.Column="9"  Grid.Row="11" />
+        <Button Click="Button_Click" x:Name="Button810" Grid.Column="10" Grid.Row="9" />
+        <Button Click="Button_Click" x:Name="Button811" Grid.Column="10" Grid.Row="10" />
+        <Button Click="Button_Click" x:Name="Button812" Grid.Column="10" Grid.Row="11" />
+        <Button Click="Button_Click" x:Name="Button820" Grid.Column="11" Grid.Row="9" />
+        <Button Click="Button_Click" x:Name="Button821" Grid.Column="11" Grid.Row="10" />
+        <Button Click="Button_Click" x:Name="Button822" Grid.Column="11" Grid.Row="11" />
+
+        <Border Height="770"    Margin="32,0,0,-25"    Width="8"    Grid.RowSpan="13"      Grid.Column="4" />
+        <Border Height="770"    Margin="32,0,0,-25"    Width="8"    Grid.RowSpan="13"      Grid.Column="8" />
+        <Border Height="8"      Margin="4,30,-27,0"    Width="792"  Grid.ColumnSpan="13"   Grid.Row="4"    RenderTransformOrigin="0.5,0.5"  />
+        <Border Height="8"      Margin="4,30,-27,0"    Width="792"  Grid.ColumnSpan="13"   Grid.Row="8"    RenderTransformOrigin="0.5,0.5"  />
+
     </Grid>
 </Window>
